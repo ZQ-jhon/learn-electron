@@ -8,15 +8,22 @@
 
 <body>
   load 本地文件：
-  <button id="new-window">创建新窗体</button>
+  <button id="btnSync">同步消息</button>
+  <button id="btnAsync">异步消息</button>
+  <button id="window">创建新窗口</button>
   <br>
   直接跳转外链：
   <a id="bing" href="https://bing.com" target="_blank">Go Bing.com</a>
   <br>
 
-  <b>关闭时, 会打开本地文件夹</b>
+  <p id="sync-reply"></p>
+  <p id="async-reply"></p>
 
+  <p id="memo"></p>
 
+  <p id="fileRply">
+
+  </p>
   <script>
     require('./renderer.js');
   </script>
